@@ -57,6 +57,49 @@ text-align: center;
 .button{
     text-align: center;
 }
+.brand-img img{
+    width: 100%;
+}
+.main{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* feature */
+.features-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+.features-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.features-para{
+    width: 500px;
+   padding-left: 50px;
+}
+#Quick-list{
+    color: rgb(122, 122, 122);
+
+}
+#of-Our{
+    font-weight: 900;
+}
+#Features{
+    color: orange;
+}
+#feat-btn{
+    padding: 20px 40px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+}
 /* for phone */
 @media screen and (max-width:576px) {
     .navber{
@@ -70,6 +113,15 @@ text-align: center;
     }
 .brand-img img{
     width: 100%;
+}
+.features-section{
+    flex-direction: column;
+}
+.features-image{
+    grid-template-columns: repeat(1,1fr);
+}
+.features-para{
+    padding: 10px;
 }
     
 }
@@ -85,5 +137,14 @@ text-align: center;
     }
 .brand-img img{
     width: 100%;
+}
+.features-section{
+    flex-direction: column;
+}
+.features-image{
+    grid-template-columns: repeat(1,1fr);
+}
+.features-para{
+    padding: 10px;
 }
 }
