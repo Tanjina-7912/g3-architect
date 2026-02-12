@@ -100,6 +100,57 @@ text-align: center;
     border: none;
     border-radius: 10px;
 }
+#exper{
+        border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.desktop{
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 30px 0px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+  
+}
+.exper-section{
+    width: 700px;
+}
+.exper-img{
+ margin-left: 20px;
+ margin: 0 auto;
+position: relative;
+}
+.exper-img >img{
+    width: 500px;
+}
+#years{
+    font-size: 48px;
+    display: block;
+    font-weight: 900;
+
+}
+.exper-button{
+    padding: 50px;
+    border: none;
+ background-color: rgb(255, 136, 0);
+ color: white;
+ font-size: 30px;
+ border-radius: 20px;
+position: absolute;
+bottom: -90px;
+left: -80px;
+
+}
+
+
+
+
+
 /* for phone */
 @media screen and (max-width:576px) {
     .navber{
@@ -119,19 +170,38 @@ text-align: center;
 }
 .features-image{
     grid-template-columns: repeat(1,1fr);
+    padding: 10px;
 }
 .features-para{
     padding: 10px;
+    width: 100%;
 }
+.experience{
+    display: block;
+}
+.exper-section{
+    width: auto;
+}
+.exper-button{
+    position: static;
+   
+}
+.exper-img >img{
+    width: 100%;
+}
+
+
+
     
 }
-@media screen and (min-width:576px) and (max-width:768px) {
+@media screen and (min-width:576px) and (max-width:992px) {
      .navber{
         flex-direction: column;
     }
     .nav-li{
         flex-direction: column;
     }
+   
        .brand-para{
         width: 100%;
     }
@@ -142,9 +212,23 @@ text-align: center;
     flex-direction: column;
 }
 .features-image{
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+   padding: 20px;
 }
 .features-para{
     padding: 10px;
+}
+.experience{
+    display: block;
+}
+.exper-section{
+    width: auto;
+}
+.exper-button{
+    position: static;
+   
+}
+.exper-img >img{
+    width: 100%;
 }
 }
